@@ -1,0 +1,98 @@
+/* General styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #778899; /* Soft blue-gray background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Form container styling */
+form {
+    background-color: #3e4a61; /* Dark slate gray for form background */
+    color: #f3e9e2; /* Light pastel text color */
+    border-radius: 10px;
+    padding: 20px 30px;
+    width: 350px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align all child elements horizontally */
+}
+
+/* Heading styling */
+form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #f3e9e2; /* Matching pastel color */
+}
+
+/* Success message styling */
+.success-message {
+    background-color: #d4edda; /* Light green background */
+    color: #155724; /* Dark green text */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #c3e6cb;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: none; /* Initially hidden */
+    width: 100%; /* Ensures the message spans the form's width */
+}
+
+/* Input field styling */
+input[type="text"], input[type="email"], input[type="number"], textarea {
+    width: 100%; /* Full width within the form */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #bfbfbf;
+    border-radius: 5px;
+    background-color: #e6e9ef; /* Light grayish background */
+    color: #333;
+    font-size: 14px;
+}
+
+/* Input field hover and focus */
+input[type="text"]:focus, input[type="email"]:focus, input[type="number"]:focus, textarea:focus {
+    border: 1px solid #ffafcc; /* Soft pastel pink */
+    outline: none;
+}
+
+/* Button styling */
+button[type="submit"] {
+    background-color: #f2a9b9; /* Pastel pink */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    width: 100%; /* Full width within the form */
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+/* Button hover effect */
+button[type="submit"]:hover {
+    background-color: #e0859b; /* Slightly darker pastel pink */
+}
+
+/* Label styling */
+label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #f3e9e2;
+    align-self: flex-start; /* Align labels to the left within the form */
+    margin-bottom: 5px;
+}
+
+/* Textarea styling */
+textarea {
+    resize: none;
+}
